@@ -10,5 +10,5 @@ server.use(express.json());
 server.use(require('./router'));
 
 // Ligando o servidor pela PORTA
-const port = 3500 || process.env.PORT;
+const port = process.env.PORT || 3000;
 server.listen( port, ()=> console.log('O servidor foi iniciado! '+port))
